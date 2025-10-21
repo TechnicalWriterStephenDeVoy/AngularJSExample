@@ -1,0 +1,10 @@
+<!-- src/app/app.component.html --> 
+<ul>
+  <!-- Use *ngFor directive to loop over the data array -->
+  <li *ngFor="let item of data">
+    <h3>{{ item.id }}</h3> <!-- Display the name of the item -->
+    <p>{{ item.username }}</p> <!-- Display the item's description -->
+    <!-- Use Angular date pipe to format the created_at value -->
+    <small>Created at: {{ item.created_at }}</small>
+  </li>
+</ul>
